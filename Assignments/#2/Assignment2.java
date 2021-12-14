@@ -12,7 +12,7 @@
 
 /*
 
-	a) For Input (1,6,4), it returns a wrong output as (1,0,6), because
+   a) For Input (1,6,4), it returns a wrong output as (1,0,6), because
       after 'if(b-a>0)' is iterated, only the else loop is iterated
       which has an empty body and so middle is assigned no new value,
       thus continuing to be 0 itself.
@@ -28,9 +28,9 @@
       of 32, we get -32 when comparing 'Yoshi' with 'yoshi'.
 
    e) if (
- 			str.toUpperCase().compareTo("A") >=0 &&
- 			str.toUpperCase().compareTo("Z") <= 0
- 		 )
+ 		str.toUpperCase().compareTo("A") >=0 &&
+ 		str.toUpperCase().compareTo("Z") <= 0
+         )
 
 */
 
