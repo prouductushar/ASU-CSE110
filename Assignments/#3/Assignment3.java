@@ -5,7 +5,9 @@
 //Date: 09/27/2021
 //---------------------------------------------------------
 
-/* Part 1: Writing Exercise
+/* 
+
+Part 1: Writing Exercise
 
 	a. 'a' : A
 	         Input 0s and 1s in one line
@@ -37,6 +39,7 @@
 
 	e.  num0 = 0;
 	    num1 = 0;
+	    
 */
 
 // Part 2: Programming
@@ -90,6 +93,7 @@ public class Assignment3{
 						asteriskC+="*";
 					}
 				}
+				
 //Print statements for histograph and GPA
 
 				System.out.println("--------------------------------------");
