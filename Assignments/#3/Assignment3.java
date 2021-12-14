@@ -66,6 +66,7 @@ public class Assignment3{
 //Initialization of do loop
 
 		do{
+			
 			System.out.println("Choose (A : Add Grades), (N : New Grades), or (Q : Quit)");
 			String options = in.nextLine();
 			choice = options.toUpperCase().charAt(0);
@@ -152,11 +153,12 @@ public class Assignment3{
 				System.out.println("*** End of Program ***");
 			}
 
-//else
+//default
 
 			else{
 				System.out.println("Invalid command was input!");
 			}
+			
 		}while(choice != 'Q');
 		in.close();
 	}
