@@ -66,7 +66,7 @@ public class Lab4
 					System.out.println("Please enter a number n:");
 					int n3 = in.nextInt();
 					System.out.print("Factors of "+n3+" : ");
-					for(int i = 1; i < n3; i++)
+					for(int i = 1; i <= n3; i++)
 						{
 							if(n3%i==0)
 							{
