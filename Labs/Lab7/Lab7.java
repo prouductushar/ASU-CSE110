@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------
+
    Author: Tushar Tyagi
    Filename: Lab7.java
 
@@ -17,6 +18,7 @@ import java.util.Scanner;
 
 public class Lab7{
 	public static void main(String[] args){
+		
 		Scanner in = new Scanner(System.in);
 		String username1,username2;
 		int age1,age2;
@@ -89,7 +91,9 @@ public class Lab7{
 					break;
 
 			}
+			
 		}while(choice!=QUIT);
+		
 		in.close();
 	}
 }
