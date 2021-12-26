@@ -48,6 +48,7 @@ public class Lab2
 		System.out.println("The value of n4 is: "+n4);
 		avg = (double)(n1+n2+n3+n4)/4;
 		System.out.println("The average of the 4 numbers is: "+avg);
+		
 	}
 }
 
