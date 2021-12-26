@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------
+
    Author: Tushar Tyagi
    Filename: Lab6.java
 
@@ -16,6 +17,7 @@
 
    public class Lab6{
 	   public static void main(String[] args){
+		   
 		   Scanner scan = new Scanner(System.in);
 		   String userName, accountNumber;
 		   Double balance;
@@ -28,8 +30,8 @@
 
 		   System.out.println("Please Enter Initial Account Balance:");
 		   balance = scan.nextDouble();
-
-           Account account = new Account(userName, accountNumber, balance);
+		   
+		   Account account = new Account(userName, accountNumber, balance);
 
 		   final int DISPLAY_BALANCE = 0;
 		   final int MODIFY_NAME = 1;
@@ -89,6 +91,7 @@
 				     System.out.println("Please enter a valid Option.");
 				     break;
 			   }
+			   
 		   }while(choice!=QUIT);
 
 		   scan.close();
