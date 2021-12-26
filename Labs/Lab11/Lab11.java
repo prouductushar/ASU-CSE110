@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------
+
    Author: Tushar Tyagi
    Filename: Lab11.java
 
@@ -9,10 +10,12 @@
    End Time: Nov 12 : 11:00 AM
 
    -------------------------------------------------------------------------------*/
+
 import java.util.Scanner;
 
 public class Lab11{
 	public static void main(String[] args){
+		
 		Scanner in = new Scanner(System.in);
 		String name;
 		int marks;
@@ -21,17 +24,20 @@ public class Lab11{
 		System.out.println("Enter the total number of students");
 		num = in.nextInt();
 		Student2[] students = new Student2[num];
+		
 		for(int i = 0; i < num; i++){
 			System.out.println("Enter name and marks of student");
 			name = in.next();
 			marks = in.nextInt();
 			students[i] = new Student2(name,marks);
 		}
+		
 		final int sum = 1;
 		final int update = 2;
 		final int swap = 3;
 		final int max_marks = 4;
 		final int quit = 5;
+		
 		do{
 			System.out.println("This program will do the following:");
 			System.out.println("1. Total Marks");
@@ -41,11 +47,16 @@ public class Lab11{
 			System.out.println("5. Exit");
 			System.out.println("Give your choice for the above options");
 			choice = in.nextInt();
+			
 			switch(choice){
+					
 				case sum:
+					
 				      System.out.println("The sum of the marks is: "+sum(students));
 				      break;
+					
 				case update:
+					
 				      System.out.println("Enter student name");
 				      String nName;
 				      nName = in.next();
@@ -54,7 +65,9 @@ public class Lab11{
 				      nMarks = in.nextInt();
 				      update(students,nName,nMarks);
 				      break;
+					
 				case swap:
+					
 				      System.out.println("Enter first student's name");
 				      String name1;
 				      name1 = in.next();
@@ -63,23 +76,32 @@ public class Lab11{
 				      name2 = in.next();
 				      swap(students, name1, name2);
 				      break;
+					
 				case max_marks:
+					
 				      System.out.println("The maximum marks are: "+max(students));
 				      break;
+					
 				case quit:
+					
 				      System.out.println("Exiting the program..");
 				      break;
+					
 				default:
+					
 				      System.out.println("Invalid choice, try again!");
 				      break;
+					
 			}
+			
 		}while(choice!=5);
+		
 		in.close();
 	}
 
 	public static int sum(Student2[] _student){
 		int sum = 0;
-    	for(int i = 0; i < _student.length; i++){
+    		for(int i = 0; i < _student.length; i++){
 			sum+=_student[i].getMarks();
 		}
 		return sum;
@@ -107,6 +129,7 @@ public class Lab11{
 	public static void swap(Student2[] _student, String name1, String name2){
 		int index1 = 0;
 		int index2 = 0;
+		
 		for(int i = 0; i < _student.length; i++){
 			if(name1.equals(_student[i].getName())){
 				index1 = i;
@@ -115,6 +138,7 @@ public class Lab11{
 				index2 = i;
 			}
 		}
+		
 		int temp = _student[index1].getMarks();
 		_student[index1].setMarks(_student[index2].getMarks());
 		_student[index2].setMarks(temp);
