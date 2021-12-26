@@ -5,14 +5,15 @@
 //Date: 09/03/21
 //-------------------------------------------------------
 
-//Part 1
-
 import java.util.Scanner;
 
 public class Lab2
 {
 	public static void main(String[] args)
 	{
+
+//Part 1
+		
 		int age;
 		int n1,n2,n3,n4;
 		double avg;
