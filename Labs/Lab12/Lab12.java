@@ -33,34 +33,46 @@
 			   System.out.println("Enter action number (1-5):");
 			   choice = in.nextInt();
 			   switch(choice){
+					   
 				   case 1:
-				   		System.out.println("Input the name of the record:");
-				   		name = in.next();
-				   		System.out.println("Input the phone number of the record");
-				   		number = in.next();
-				   		pb.add(name, number);
-				   		pb.show();
-				   		break;
+					   
+				   	System.out.println("Input the name of the record:");
+				   	name = in.next();
+				 	System.out.println("Input the phone number of the record");
+				   	number = in.next();
+				   	pb.add(name, number);
+				   	pb.show();
+				   	break;
+					   
 				   case 2:
-				   		System.out.println("Input the name of the record you want to delete:");
-				   		name = in.next();
-				   		pb.delete(name);
-				   		pb.show();
-				   		break;
+					   
+				   	System.out.println("Input the name of the record you want to delete:");
+				   	name = in.next();
+				   	pb.delete(name);
+				   	pb.show();
+				   	break;
+					   
 				   case 3:
-				   		pb.read();
-				   		pb.show();
-				   		break;
+					   
+				   	pb.read();
+				   	pb.show();
+				   	break;
+					   
 				   case 4:
-				   		pb.save();
-				   		break;
+				   	
+					pb.save();
+				   	break;
+					   
 				   case 5:
-				   		EXIT = true;
-				   		System.out.println("Exiting the Program...");
-				   		break;
+				   	
+					EXIT = true;
+				   	System.out.println("Exiting the Program...");
+				   	break;
+					   
 				   default:
-				   		System.out.println("Invalid Input!");
-				   		break;
+				   		
+					System.out.println("Invalid Input!");
+				   	break;
 			   }
 		   }
 	   }
