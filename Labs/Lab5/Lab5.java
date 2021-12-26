@@ -78,6 +78,7 @@ public class Lab5{
 					break;
 
 			}
+			
 		}while(choice!=QUIT);
 
 		in.close();
