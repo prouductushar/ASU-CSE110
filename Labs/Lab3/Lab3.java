@@ -126,13 +126,14 @@ public class Lab3
 						firstString=str1;
 						lastString=str2;
 					}
+					
 					else {
 						firstString=str1;
 						lastString=str2;
 					}
 				}
-
-			    else {
+				
+				else {
 					firstString=str1;
 					lastString=str2;
 				}
@@ -146,9 +147,9 @@ public class Lab3
 
 //Final Print Statements
 
-			System.out.println("First String is: "+firstString);
-			System.out.println("Second String is: "+lastString);
-			in.close();
+		System.out.println("First String is: "+firstString);
+		System.out.println("Second String is: "+lastString);
+		in.close();
 	}
 }
 
