@@ -1,4 +1,5 @@
-/* -------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------
+
    Author: Tushar Tyagi
    Filename: Lab9.java
 
@@ -29,6 +30,7 @@ public class Lab9{
 		for(int i = 0; i < 8; i++){
 			System.out.print(ints[i]+",");
 		}
+		
 		System.out.println();
 
 		System.out.println("Enter which location you want to insert:");
@@ -39,12 +41,14 @@ public class Lab9{
 		for(int i = 9; i > 1; i--){
 			ints[i]=ints[i-1];
 		}
+		
 		ints[loc-1]=value;
 
 		System.out.println("Values in array are:");
-			for(int i = 0; i < 9; i++){
-				System.out.print(ints[i]+",");
-			}
+		for(int i = 0; i < 9; i++){
+			System.out.print(ints[i]+",");
+		}
+		
 		System.out.println();
 
 		System.out.println("Enter which location you want to delete:");
@@ -54,9 +58,10 @@ public class Lab9{
 		}
 
 		System.out.println("Values in array are:");
-			for(int i = 0; i < 8; i++){
-				System.out.print(ints[i]+",");
-			}
+		for(int i = 0; i < 8; i++){
+			System.out.print(ints[i]+",");
+		}
+		
 		System.out.println();
 
 		System.out.println("Enter first swap location:");
@@ -69,11 +74,11 @@ public class Lab9{
 		ints[second-1] = val;
 
 		System.out.println("Values in array are:");
-			for(int i = 0; i < 8; i++){
-				System.out.print(ints[i]+",");
-			}
-		System.out.println();
+		for(int i = 0; i < 8; i++){
+			System.out.print(ints[i]+",");
+		}
 
+		System.out.println();
 	}
 }
 
