@@ -12,10 +12,21 @@
 
 /*
 
-   a) For Input (1,6,4), it returns a wrong output as (1,0,6), because
-      after 'if(b-a>0)' is iterated, only the else loop is iterated
-      which has an empty body and so middle is assigned no new value,
-      thus continuing to be 0 itself.
+   a) Error 1:
+      Input: (1,6,4) 
+      Output: (1,0,6)
+      Explanation: After the first else loop is iterated, the following else loop
+      does not contain statements to fulfill a spot for the middle number since it 
+      has an empty body and so the middle variable is assigned no new value, thus 
+      continuing to be 0 itself.
+      
+      Error 2:
+      Input: (6,1,4)
+      Output: (6,0,1)
+      Explanation: After the first else loop is iterated, the following else loop
+      does not contain statements to fulfill a spot for the middle number since it 
+      has an empty body and so the middle variable is assigned no new value, thus 
+      continuing to be 0 itself.
 
    b) else{middle=c;}
 
