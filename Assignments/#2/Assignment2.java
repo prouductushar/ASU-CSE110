@@ -50,22 +50,22 @@ public class Assignment2{
 		System.out.println("Please input the first name:");
 		s1 = scanner.next().toUpperCase();
 		if(s1.substring(0,1).compareTo("A")<=0 || s1.substring(0,1).compareTo("Z")>=0){
-					System.out.println("Error: The first letter should be an alphabet");
-					s1="";
+			System.out.println("Error: The first letter should be an alphabet");
+			s1="";
 		}
 
 		System.out.println("Please input the second name:");
 		s2 = scanner.next().toUpperCase();
 		if(s2.substring(0,1).compareTo("A")<=0 || s2.substring(0,1).compareTo("Z")>=0){
-					System.out.println("Error: The first letter should be an alphabet");
-					s2="";
+			System.out.println("Error: The first letter should be an alphabet");
+			s2="";
 		}
 
 		System.out.println("Please input the third name:");
 		s3 = scanner.next().toUpperCase();
 		if(s3.substring(0,1).compareTo("A")<=0 || s3.substring(0,1).compareTo("Z")>=0){
-				System.out.println("Error: The first letter should be an alphabet");
-				s3="";
+			System.out.println("Error: The first letter should be an alphabet");
+			s3="";
 		}
 
 //Checking whether any string is an empty string and thus avoiding those in the inclusion for the algorithm to see what words come first lexicographically
@@ -73,26 +73,35 @@ public class Assignment2{
 //This one runs when all are perfect names
 
 		if(!s1.equals("") && !s2.equals("") && !s3.equals("")){
+			
 			if(s1.compareTo(s2)>=0 && s1.compareTo(s3)>=0){
+				
 				if(s2.compareTo(s3)>=0){
 					System.out.println(s3+", "+s2+", "+s1);
 				}
+				
 				else{
 					System.out.println(s2+", "+s3+", "+s1);
 				}
 			}
+			
 			else if(s2.compareTo(s1)>=0 && s2.compareTo(s3)>=0){
+				
 				if(s1.compareTo(s3)>=0){
 					System.out.println(s3+", "+s1+", "+s2);
 				}
+				
 				else{
 					System.out.println(s1+", "+s3+", "+s2);
 				}
 			}
+			
 			else{
+				
 				if(s1.compareTo(s2)>=0){
 					System.out.println(s2+", "+s1+", "+s3);
 				}
+				
 				else{
 					System.out.println(s1+", "+s2+", "+s3);
 				}
@@ -108,17 +117,22 @@ public class Assignment2{
 //This one is run when s1 is not a proper name and then there are nested loops to check any other ones as well
 
 		else if(s1.equals("")){
+			
 			if(s2.equals("")){
 				System.out.println(s3);
 			}
+			
 			else if(s3.equals("")){
 				System.out.println(s2);
 			}
+			
 			else{
+				
 				if(s2.compareTo(s3)>=0){
 					System.out.println(s3+", "+s2);
 				}
-			    else{
+				
+			    	else{
 					System.out.println(s2+", "+s3);
 				}
 			}
@@ -127,16 +141,21 @@ public class Assignment2{
 //This one is run when s2 is not a proper name and then there are nested loops to check any other ones as well
 
 		else if(s2.equals("")){
+			
 			if(s1.equals("")){
 				System.out.println(s3);
 			}
+			
 			else if(s3.equals("")){
 				System.out.println(s1);
 			}
+			
 			else{
+				
 				if(s1.compareTo(s3)>=0){
 					System.out.println(s3+", "+s1);
 				}
+				
 				else{
 					System.out.println(s1+", "+s3);
 				}
@@ -147,16 +166,21 @@ public class Assignment2{
 
 
 		else if(s3.equals("")){
+			
 			if(s1.equals("")){
 				System.out.println(s2);
 			}
+			
 			else if(s2.equals("")){
 				System.out.println(s1);
 			}
+			
 			else{
+				
 				if(s1.compareTo(s2)>=0){
 					System.out.println(s2+", "+s1);
 				}
+				
 				else{
 					System.out.println(s1+", "+s2);
 				}
