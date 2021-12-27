@@ -11,12 +11,15 @@ public class Fraction{
 	}
 
 	public String toString(){
+		
 		if(numerator==0){
 			return "0";
 		}
+		
 		else if(denominator==1){
 			return ""+numerator;
 		}
+		
 		else{
 			String fraction=""+numerator+"/"+denominator;
 			return fraction;
@@ -24,27 +27,31 @@ public class Fraction{
 	}
 
 	private int greatestCommonDivisor(int num1,int num2){
+		
 		if(num1==num2){
 			return num1;
 		}
+		
 		else{
 			int diff;
 			int large=Math.max(Math.abs(num1),Math.abs(num2));
-		    int small=Math.min(Math.abs(num1),Math.abs(num2));
+		    	int small=Math.min(Math.abs(num1),Math.abs(num2));
 			while(large!=0 && small!=0){
 				diff=large-small;
 				large=Math.max(diff,small);
-		        small=Math.min(diff,small);
+		        	small=Math.min(diff,small);
 			}
 			return large;
 		}
 	}
 
 	private void simplify(){
+		
 		if(denominator<0){
 			numerator*=-1;
 			denominator*=-1;
 		}
+		
 		int GCD=greatestCommonDivisor(numerator,denominator);
 		numerator=numerator/GCD;
 		denominator=denominator/GCD;
